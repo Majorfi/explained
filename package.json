@@ -1,0 +1,35 @@
+{
+  "name": "explain",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "patch-package",
+    "dev": "next dev",
+    "build": "next build",
+    "analyze": "ANALYZE=true next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "eslint . --ext .js",
+    "lintfix": "eslint . --ext .js --fix"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.4.2",
+    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "autoprefixer": "^10.4.0",
+    "dotenv-webpack": "^7.0.3",
+    "next": "12.0.3",
+    "next-seo": "^4.28.1",
+    "patch-package": "^6.4.7",
+    "postcss": "^8.3.11",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.18"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-next": "^12.0.3",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
