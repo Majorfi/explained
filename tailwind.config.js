@@ -21,33 +21,30 @@ module.exports = {
 		]
 	},
 	theme: {
-		fontFamily: {
-			mono: ['IBM Plex Mono', 'monospace']
-		},
 		colors: {
 			white: colors.white,
-			pending: '#FFB800',
+			highlight: '#0657F9',
 			dark: {
-				900: '#09162E',
+				900: '#081A3E',
 				600: '#13264B',
+				500: '#394865',
 				400: '#18305F',
 				300: '#2f446f',
 				200: '#46597e',
-				100: '#5d6e8f',
+				100: '#838C9E',
 				50: '#ced3dd',
 			},
 		},
 		extend: {
-			lineHeight: {
-				11: '3.25rem',
-				'120px': '120px'
+			maxWidth: {
+				'screen-lg': '1000px'
+			},
+			fontFamily: {
+				rubik: ['Rubik', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
 			},
 			fontSize: {
-				'xxs': '0.6rem',
-				'xs': '0.7rem',
-				'3xl': '2rem',
-				'7xl': '5rem',
-				'sm': '0.8rem',
+				'4xl': ['2.5rem', '2.9375rem'],
+				'xxl': ['12.5rem', '14.8125rem'],
 			}
 		},
 	},

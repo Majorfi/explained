@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:900');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700;900&display=swap');
 
 :root {
     --vh: 100vh;
@@ -21,7 +21,7 @@ html, body, section {
 }  
 html {
     scroll-snap-type: y mandatory;
-    background-color: rgb(19,38,75);
+    background-color: #081A3E;
 }
 section {
     scroll-snap-align: end;
@@ -30,85 +30,13 @@ section {
     justify-content: center;
 }
 
-.highlight {
-    background: url('../public//brush.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+.with-top-gradient {
+    background: linear-gradient(180deg, #081A3E 0%, rgba(8, 26, 62, 0) 100%);
 }
 
-
-h1 {
-	text-transform: uppercase;
-	font-family: 'Rubik';
-	color: #E4E5E6;
-	position: relative;
-	background: linear-gradient(to right, #18305F, #18305F, #18305F);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.with-bottom-gradient {
+    background: linear-gradient(0deg, #081A3E 0%, rgba(8, 26, 62, 0) 100%);
 }
-h1::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	text-shadow: -0.001em -0.001em 1px #2f446f
-}
-h1::after {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	text-shadow: 10px 10px 10px rgba(19, 38, 75, 0.5), 20px 20px 20px rgba(19, 38, 75, 0.4), 30px 30px 30px rgba(19, 38, 75, 0.1);
-	mix-blend-mode: multiply;
-}
-
-h1.highlighted {
-	text-transform: uppercase;
-	font-family: 'Rubik';
-	color: #E4E5E6;
-	position: relative;
-	background: linear-gradient(to right, #FFB800, #FFB800, #FFB800);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-h1.highlighted::before {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	text-shadow: -0.001em -0.001em 1px #ffe299
-}
-h1.highlighted::after {
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -2;
-	text-shadow: 10px 10px 10px rgba(255, 184, 0, 0.5), 20px 20px 20px rgba(255, 184, 0, 0.4), 30px 30px 30px rgba(255, 184, 0, 0.1);
-	mix-blend-mode: multiply;
-}
-
-
-
-strong {
-	position: relative;
-}
-strong::after {
-	content: '';
-	position: absolute;
-	bottom: -2rem;
-	left: -4rem;
-	right: -4rem;
-	height: 11rem;
-	z-index: -1;
-	background-image: url('../public/brush.svg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 
 .tmp__home--bg {
     position: absolute;

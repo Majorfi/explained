@@ -1,7 +1,9 @@
 [
 	{
 		"title": [
-			{"text": "Je travaille dans une entreprise du secteur financier."}
+			{"text": "Je travaille dans une entreprise "},
+			{"text": "du secteur financier", "style": "highlight"}
+
 		],
 		"description": [
 			{"text": "Commençons avec quelque chose de très basique avant d'aller vers le Web 3.0, la Blockchain et les DAO !"}
@@ -10,8 +12,7 @@
 	{
 		"title": [
 			{"text": "Je travaille dans une entreprise du secteur financier,"},
-			{"text": " utilisant la Blockchain", "style": "highlight"},
-			{"text": "."}
+			{"text": " utilisant la Blockchain", "style": "highlight"}
 		],
 		"description": [
 			{"text": "La "},
@@ -22,8 +23,7 @@
 	{
 		"title": [
 			{"text": "Je travaille dans une entreprise du secteur financier, utilisant la Blockchain"},
-			{"text": " et des SmartContracts", "style": "highlight"},
-			{"text": "."}
+			{"text": " et des SmartContracts", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Un "},
@@ -34,8 +34,7 @@
 	{
 		"title": [
 			{"text": "Je travaille dans une entreprise du secteur financier, utilisant la Blockchain, des SmartContracts"},
-			{"text": " et des cryptomonnaies", "style": "highlight"},
-			{"text": "."}
+			{"text": " et des cryptomonnaies", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Une "},
@@ -47,7 +46,7 @@
 		"title": [
 			{"text": "Je travaille dans une entreprise du secteur financier"},
 			{"text": " décentralisé", "style": "highlight"},
-			{"text": ", utilisant la Blockchain, des SmartContracts et des cryptomonnaies."}
+			{"text": ", utilisant la Blockchain, des SmartContracts et des cryptomonnaies"}
 		],
 		"description": [
 			{"text": "La "},
@@ -58,8 +57,7 @@
 	{
 		"title": [
 			{"text": "Je travaille dans une entreprise de la "},
-			{"text": "DeFi", "style": "highlight"},
-			{"text": "."}
+			{"text": "DeFi", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Simplifions la phrase avant de passer à la suite !"}
@@ -69,7 +67,7 @@
 		"title": [
 			{"text": "Je travaille dans une "},
 			{"text": "Organisation Décentralisée Autonome (DAO)", "style": "highlight"},
-			{"text": " de la DeFi."}
+			{"text": " de la DeFi"}
 		],
 		"description": [
 			{"text": "Une "},
@@ -83,7 +81,7 @@
 		"title": [
 			{"text": "Je travaille "},
 			{"text": "avec", "style": "highlight"},
-			{"text": " une DAO de la DeFi."}
+			{"text": " une DAO de la DeFi"}
 		],
 		"description": [
 			{"text": "Du fait de l'absence de statut officiel (d'un point de vue juridique et gouvernemental), une DAO n'est pas une entreprise telle que vous les connaissez. Il s'agit davantage d'un groupe de contributeurs qui reçoivent des récompenses pour leurs contributions, basé à la fois sur ce qu'ils ont fait ainsi que sur un accord commun. Il ne s'agit pas d'employés recevant un salaire pour ainsi dire."},
@@ -108,8 +106,7 @@
 	{
 		"title": [
 			{"text": "Je construis avec "},
-			{"text": "Yearn", "style": "highlight"},
-			{"text": "."}
+			{"text": "Yearn", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Yearn Finance", "style": "highlight"},
