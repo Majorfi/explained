@@ -31,7 +31,7 @@ function	SectionFooter({currentPage, pagesCount}) {
 						className={`w-2 h-2 transition-colors ${currentPage === e ? 'bg-white' : 'bg-dark-500'} rounded-full`} />
 				))}
 			</div>
-			<svg width={'24'} height={'24'} className={'animate animate-bounce text-dark-500'} viewBox={'0 0 24 24'} fill={'none'} xmlns={'http://www.w3.org/2000/svg'}>
+			<svg width={'24'} height={'24'} className={`animate animate-bounce text-dark-500 transition-opacity ${currentPage !== pagesCount ? 'opacity-100' : 'opacity-0'}`} viewBox={'0 0 24 24'} fill={'none'} xmlns={'http://www.w3.org/2000/svg'}>
 				<path d={'M5.65079 4.24076C5.23147 3.88134 4.60017 3.9299 4.24075 4.34923C3.88132 4.76855 3.92989 5.39985 4.34921 5.75927L11.3492 11.7593C11.7237 12.0803 12.2763 12.0803 12.6508 11.7593L19.6508 5.75927C20.0701 5.39985 20.1187 4.76855 19.7593 4.34923C19.3998 3.9299 18.7685 3.88134 18.3492 4.24076L12 9.68294L5.65079 4.24076Z'} fill={'currentcolor'}/>
 				<path d={'M5.65079 11.2408C5.23147 10.8813 4.60017 10.9299 4.24075 11.3492C3.88132 11.7686 3.92989 12.3999 4.34921 12.7593L11.3492 18.7593C11.7237 19.0803 12.2763 19.0803 12.6508 18.7593L19.6508 12.7593C20.0701 12.3999 20.1187 11.7686 19.7593 11.3492C19.3998 10.9299 18.7685 10.8813 18.3492 11.2408L12 16.6829L5.65079 11.2408Z'} fill={'currentcolor'}/>
 			</svg>
