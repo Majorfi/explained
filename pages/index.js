@@ -21,14 +21,15 @@ function	YearnLogo() {
 
 	);
 }
-function	SectionFooter({currentPage, pagesCount}) {
+function	SectionFooter({currentPage, pagesCount, slideSize}) {
 	return (
 		<div className={'max-w-screen-lg mx-auto flex flex-col justify-center items-center'}>
 			<div className={'mb-11 flex flex-row space-x-8'}>
 				{range(0, pagesCount).map((e) => (
 					<div
 						key={e}
-						className={`w-2 h-2 transition-colors ${currentPage === e ? 'bg-white' : 'bg-dark-500'} rounded-full`} />
+						onClick={() => currentPage !== e && window.scroll({top: e === 0 ? 0 : (slideSize * e), behavior: 'smooth'})}
+						className={`w-2 h-2 transition-colors ${currentPage === e ? 'bg-white' : 'bg-dark-500 cursor-pointer'} rounded-full`} />
 				))}
 			</div>
 			<svg width={'24'} height={'24'} className={`animate animate-bounce text-dark-500 transition-opacity ${currentPage !== pagesCount ? 'opacity-100' : 'opacity-0'}`} viewBox={'0 0 24 24'} fill={'none'} xmlns={'http://www.w3.org/2000/svg'}>
@@ -39,7 +40,7 @@ function	SectionFooter({currentPage, pagesCount}) {
 	);
 }
 
-function	SectionTitle({currentPage, pagesCount, language, set_language}) {
+function	SectionTitle({currentPage, pagesCount, slideSize, language, set_language}) {
 	const	[modalLanguageOpen, set_modalLanguageOpen] = React.useState(false);
 
 	let	Flag = FlagEN;
@@ -79,6 +80,7 @@ function	SectionTitle({currentPage, pagesCount, language, set_language}) {
 			</div>
 			<div className={'fixed bottom-0 pb-10 pt-16 w-full flex justify-center items-center with-bottom-gradient'}>
 				<SectionFooter
+					slideSize={slideSize}
 					currentPage={currentPage}
 					pagesCount={pagesCount} />
 			</div>
@@ -95,6 +97,7 @@ function	Index() {
 	const	ref = React.useRef();
 	const	headerRef = React.useRef();
 	const	[currentPage, set_currentPage] = React.useState(0);
+	const	[slideSize, set_slideSize] = React.useState(0);
 	const	[language, set_language] = React.useState('en');
 	const	{y} = useWindowScroll();
 
@@ -110,6 +113,7 @@ function	Index() {
 		const	sectionHeight = headerRef?.current?.getBoundingClientRect()?.height || 0;
 		const	positionFromTop = ref?.current?.getBoundingClientRect()?.top || 0;
 		set_currentPage(positionFromTop > 0 ? 0 : Math.round((Math.abs(positionFromTop / sectionHeight) + 1)));
+		set_slideSize(sectionHeight);
 	}, [y, headerRef, ref]);
 
 	return (
@@ -120,6 +124,7 @@ function	Index() {
 				<SectionTitle
 					language={language}
 					set_language={set_language}
+					slideSize={slideSize}
 					currentPage={currentPage}
 					pagesCount={sections.length} />
 			</section>
@@ -128,20 +133,20 @@ function	Index() {
 					<section key={`Section_${i}`} className={'section flex w-full h-screen px-4 md:px-0'}>					
 						<div className={'h-full max-w-screen-lg mx-auto flex flex-col justify-center items-center w-full whitespace-pre-line'}>
 							<p className={'text-white font-rubik font-bold text-4xl text-center'}>
-								{section.title.map(({text, style}) => {
+								{section.title.map(({text, style}, index) => {
 									if (style === 'highlight') {
-										return <span className={'text-highlight'}>{text}</span>;
+										return <span key={`title${index}`}className={'text-highlight'}>{text}</span>;
 									} else {
 										return text;
 									}
 								})}
 							</p>
 							<p className={'text-dark-100 font-rubik font-light text-2xl text-center m-10 p-0.5'}>
-								{section.description.map(({text, style}) => {
+								{section.description.map(({text, style}, index) => {
 									if (style === 'highlight') {
-										return <span className={'text-highlight'}>{text}</span>;
+										return <span key={index} className={'text-highlight'}>{text}</span>;
 									} if (style === 'spacing') {
-										return <p />;
+										return <p key={index} />;
 									} else {
 										return text;
 										
