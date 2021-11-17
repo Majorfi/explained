@@ -91,13 +91,6 @@ function	Index({router}) {
 	const	{y} = useWindowScroll();
 
 	React.useEffect(() => {
-		if (typeof window !== 'undefined') {
-			const	vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
-		}
-	}, [typeof(window)]);
-
-	React.useEffect(() => {
 		set_sections(LOCALES[router.locale || 'en-US'].section);
 	}, [router.locale]);
 
