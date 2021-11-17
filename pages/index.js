@@ -1,12 +1,8 @@
 import	React				from	'react';
 import	LanguageSelection	from	'components/LanguageSelection';
-import	FlagFR				from	'components/FlagFR';
-import	FlagEN				from	'components/FlagEN';
-import	FlagES				from	'components/FlagES';
-import	FlagRU				from	'components/FlagRU';
 import	SectionsEn			from	'localization/en.json';
-import	SectionsFR			from	'localization/fr.json';
 import	useWindowScroll		from	'hooks/useWindowScroll';
+import	LOCALES				from	'utils/locale';
 
 const range = (min, max) => [...Array(max - min + 1).keys()].map((i) => i + min);
 
@@ -43,14 +39,6 @@ function	SectionFooter({currentPage, pagesCount, slideSize}) {
 function	SectionTitle({currentPage, pagesCount, slideSize, language, set_language}) {
 	const	[modalLanguageOpen, set_modalLanguageOpen] = React.useState(false);
 
-	let	Flag = FlagEN;
-	if (language === 'fr')
-		Flag = FlagFR;
-	if (language === 'es')
-		Flag = FlagES;
-	if (language === 'ru')
-		Flag = FlagRU;
-
 	return (
 		<>
 			<div className={'fixed top-0 pt-5 md:pt-10 pb-14 md:pb-28 w-full flex justify-center items-center with-top-gradient'}>
@@ -59,7 +47,7 @@ function	SectionTitle({currentPage, pagesCount, slideSize, language, set_languag
 			<div
 				className={'w-full flex justify-end absolute h-10 top-0 left-0 right-0 p-4 filter cursor-pointer'}
 				onClick={() => set_modalLanguageOpen(true)}>
-				<Flag width={16} height={12} />
+				{LOCALES[language]?.['flag-sm'] || LOCALES['en-US']['flag-sm']}
 			</div>
 			<div className={'h-full max-w-full md:max-w-screen-lg mx-auto flex flex-col w-full'}>
 				<div className={'w-full h-full mx-auto flex flex-row justify-center items-center'}>
@@ -93,21 +81,22 @@ function	SectionTitle({currentPage, pagesCount, slideSize, language, set_languag
 	);
 }
 
-function	Index() {
+function	Index({router}) {
 	const	ref = React.useRef();
 	const	headerRef = React.useRef();
 	const	[currentPage, set_currentPage] = React.useState(0);
 	const	[slideSize, set_slideSize] = React.useState(0);
-	const	[language, set_language] = React.useState('en');
+	const	[language, set_language] = React.useState(router.locale || 'en-US');
+	const	[sections, set_sections] = React.useState(SectionsEn);
 	const	{y} = useWindowScroll();
 
-	let	sections = SectionsEn;
-	if (language === 'fr')
-		sections = SectionsFR;
-	if (language === 'es')
-		sections = SectionsEn;
-	if (language === 'ru')
-		sections = SectionsEn;
+	React.useEffect(() => {
+		set_sections(LOCALES[router.locale || 'en-US'].section);
+	}, [router.locale]);
+
+	React.useEffect(() => {
+		set_sections(LOCALES[language].section);
+	}, [language]);
 
 	React.useEffect(() => {
 		const	sectionHeight = headerRef?.current?.getBoundingClientRect()?.height || 0;
@@ -132,7 +121,7 @@ function	Index() {
 				{sections.map((section, i) => (
 					<section key={`Section_${i}`} className={'section flex w-full h-screen px-4 md:px-0'}>					
 						<div className={'h-full max-w-full md:max-w-screen-lg mx-auto flex flex-col justify-center items-center w-full whitespace-pre-line'}>
-							<p className={'text-white font-rubik font-bold text-base md:text-4xl text-center'}>
+							<div className={'text-white font-rubik font-bold text-base md:text-4xl text-center'}>
 								{section.title.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={`title${index}`}className={'text-highlight'}>{text}</span>;
@@ -140,8 +129,8 @@ function	Index() {
 										return text;
 									}
 								})}
-							</p>
-							<p className={'text-dark-100 font-rubik font-light text-sm md:text-2xl text-center m-10 p-0.5'}>
+							</div>
+							<div className={'text-dark-100 font-rubik font-light text-sm md:text-2xl text-center m-10 p-0.5'}>
 								{section.description.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={index} className={'text-highlight'}>{text}</span>;
@@ -152,7 +141,7 @@ function	Index() {
 										
 									}
 								})}
-							</p>
+							</div>
 						</div>
 					</section>
 				))}
