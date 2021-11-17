@@ -121,7 +121,7 @@ function	Index({router}) {
 				{sections.map((section, i) => (
 					<section key={`Section_${i}`} className={'section flex w-full h-screen px-4 md:px-0'}>					
 						<div className={'h-full max-w-full md:max-w-screen-lg mx-auto flex flex-col justify-center items-center w-full whitespace-pre-line'}>
-							<div className={'text-white font-rubik font-bold text-base md:text-4xl text-center'}>
+							<div className={'text-white font-rubik font-bold text-base xs:text-2xl md:text-4xl text-center'}>
 								{section.title.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={`title${index}`}className={'text-highlight'}>{text}</span>;
@@ -130,7 +130,7 @@ function	Index({router}) {
 									}
 								})}
 							</div>
-							<div className={'text-dark-100 font-rubik font-light text-sm md:text-2xl text-center m-10 p-0.5'}>
+							<div className={'text-dark-100 font-rubik font-light text-sm xs:text-lg md:text-2xl text-center mt-6 md:mt-10 p-0.5'}>
 								{section.description.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={index} className={'text-highlight'}>{text}</span>;

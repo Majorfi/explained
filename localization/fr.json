@@ -28,7 +28,7 @@
 		"description": [
 			{"text": "Un "},
 			{"text": "SmartContract", "style": "highlight"},
-			{"text": " est un programme informatique, aka un ensemble de règles, exécuté par la Blockchain. Il s'agit de code définissant toutes les conditions pour que la transaction soit validée, qui vérifie ces conditions puis exécute la transaction. Cela résulte en un changement de l'état de la Blockchain qui sera dès lors enregistré et accessible à tous."}
+			{"text": " est un programme informatique, ou un ensemble de règles, exécuté par la Blockchain. Il s'agit de code vérifiants toutes les conditions pour que la transaction soit validée puis l'exécute. Le résultat de la transaction est alors enregistré et accessible à tous."}
 		]
 	},
 	{

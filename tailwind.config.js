@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
 	darkMode: 'class',
@@ -34,6 +35,10 @@ module.exports = {
 				100: '#838C9E',
 				50: '#ced3dd',
 			},
+		},
+		screens: {
+			'xs': '375px',
+			...defaultTheme.screens,
 		},
 		extend: {
 			maxWidth: {
