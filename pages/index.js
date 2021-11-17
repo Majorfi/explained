@@ -23,8 +23,8 @@ function	YearnLogo() {
 }
 function	SectionFooter({currentPage, pagesCount, slideSize}) {
 	return (
-		<div className={'max-w-screen-lg mx-auto flex flex-col justify-center items-center'}>
-			<div className={'mb-11 flex flex-row space-x-8'}>
+		<div className={'max-w-full md:max-w-screen-lg mx-auto flex flex-col justify-center items-center'}>
+			<div className={'mb-11 flex flex-row space-x-4 md:space-x-8'}>
 				{range(0, pagesCount).map((e) => (
 					<div
 						key={e}
@@ -53,7 +53,7 @@ function	SectionTitle({currentPage, pagesCount, slideSize, language, set_languag
 
 	return (
 		<>
-			<div className={'fixed top-0 pt-10 pb-28 w-full flex justify-center items-center with-top-gradient'}>
+			<div className={'fixed top-0 pt-5 md:pt-10 pb-14 md:pb-28 w-full flex justify-center items-center with-top-gradient'}>
 				<YearnLogo />
 			</div>
 			<div
@@ -61,24 +61,24 @@ function	SectionTitle({currentPage, pagesCount, slideSize, language, set_languag
 				onClick={() => set_modalLanguageOpen(true)}>
 				<Flag width={16} height={12} />
 			</div>
-			<div className={'h-full max-w-screen-lg mx-auto flex flex-col w-full'}>
+			<div className={'h-full max-w-full md:max-w-screen-lg mx-auto flex flex-col w-full'}>
 				<div className={'w-full h-full mx-auto flex flex-row justify-center items-center'}>
 					<div className={'flex flex-col w-full'}>
 						<div className={'flex flex-col items-center justify-center mx-auto space-y-2'}>
-							<p className={'font-rubik font-light text-4xl text-center lowercase text-white'}>
+							<p className={'font-rubik font-light text-2xl md:text-4xl text-center lowercase text-white'}>
 								{'Building with'}
 							</p>
-							<h1 className={'font-rubik font-black text-xxl text-center text-highlight uppercase'}>
+							<h1 className={'font-rubik font-black text-8xl md:text-xxl text-center text-highlight uppercase'}>
 								{'YEARN'}
 							</h1>
-							<p className={'font-rubik font-light text-4xl text-center lowercase text-white'}>
+							<p className={'font-rubik font-light text-2xl md:text-4xl text-center lowercase text-white'}>
 								{'Explained'}
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className={'fixed bottom-0 pb-10 pt-16 w-full flex justify-center items-center with-bottom-gradient'}>
+			<div className={'fixed bottom-0 pb-5 md:pb-10 pt-8 md:pt-16 w-full flex justify-center items-center with-bottom-gradient'}>
 				<SectionFooter
 					slideSize={slideSize}
 					currentPage={currentPage}
@@ -131,8 +131,8 @@ function	Index() {
 			<div ref={ref}>
 				{sections.map((section, i) => (
 					<section key={`Section_${i}`} className={'section flex w-full h-screen px-4 md:px-0'}>					
-						<div className={'h-full max-w-screen-lg mx-auto flex flex-col justify-center items-center w-full whitespace-pre-line'}>
-							<p className={'text-white font-rubik font-bold text-4xl text-center'}>
+						<div className={'h-full max-w-full md:max-w-screen-lg mx-auto flex flex-col justify-center items-center w-full whitespace-pre-line'}>
+							<p className={'text-white font-rubik font-bold text-base md:text-4xl text-center'}>
 								{section.title.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={`title${index}`}className={'text-highlight'}>{text}</span>;
@@ -141,7 +141,7 @@ function	Index() {
 									}
 								})}
 							</p>
-							<p className={'text-dark-100 font-rubik font-light text-2xl text-center m-10 p-0.5'}>
+							<p className={'text-dark-100 font-rubik font-light text-sm md:text-2xl text-center m-10 p-0.5'}>
 								{section.description.map(({text, style}, index) => {
 									if (style === 'highlight') {
 										return <span key={index} className={'text-highlight'}>{text}</span>;

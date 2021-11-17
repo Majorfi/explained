@@ -43,7 +43,9 @@ module.exports = {
 				rubik: ['Rubik', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif']
 			},
 			fontSize: {
+				'2xl': ['1.5rem', '1.7775rem'],
 				'4xl': ['2.5rem', '2.9375rem'],
+				'8xl': ['5rem', '5.925rem'],
 				'xxl': ['12.5rem', '14.8125rem'],
 			}
 		},
