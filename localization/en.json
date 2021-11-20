@@ -5,34 +5,34 @@
 			{"text": "in the financial sector", "style": "highlight"}
 		],
 		"description": [
-			{"text": "Something very basic to start with, but let's transform that in the web3 and Blockchain DAO world!"}
+			{"text": "Let's start simple before getting into Web 3.0, Blockchain and DAOs!"}
 		]
 	},
 	{
 		"title": [
 			{"text": "I work in a company\nin the financial sector,\n"},
-			{"text": "backed by the Blockchain", "style": "highlight"}
+			{"text": "that uses the Blockchain", "style": "highlight"}
 		],
 		"description": [
 			{"text": "A "},
 			{"text": "Blockchain", "style": "highlight"},
-			{"text": " is a public record of transactions allowing the transfer of value in the digital space without middlemen"}
+			{"text": " is a public record of transactions allowing the transfer of value in the digital space without middlemen."}
 		]
 	},
 	{
 		"title": [
-			{"text": "I work in a company\nin the financial sector,\nbacked by the Blockchain\n"},
-			{"text": "and SmartContracts", "style": "highlight"}
+			{"text": "I work in a company\nin the financial sector,\nthat uses the Blockchain\n"},
+			{"text": "and Smart Contracts", "style": "highlight"}
 		],
 		"description": [
 			{"text": "A "},
 			{"text": "SmartContract", "style": "highlight"},
-			{"text": " is a program, aka a set of rules, executed by the Blockchain. It is some code that defines all the conditions for a transaction to be successfull, checks theses conditions and executes the transaction. This results in changes in the state of the Blockchain that will be recorded in it."}
+			{"text": " is a program, or a set of rules, executed by the Blockchain. It is a piece of code that defines all the conditions for a transaction to be successfull, checks theses conditions and executes the transaction. This results recorded as state changes in the Blockchain, where it can be accessed by anyone."}
 		]
 	},
 	{
 		"title": [
-			{"text": "I work in a company\nin the financial sector,\nbacked by the Blockchain\nand SmartContracts,\n"},
+			{"text": "I work in a company\nin the financial sector,\nthat uses the Blockchain\nand Smart Contracts,\n"},
 			{"text": "using cryptocurrencies", "style": "highlight"}
 		],
 		"description": [
@@ -45,12 +45,12 @@
 		"title": [
 			{"text": "I work in a company\nin the "},
 			{"text": "decentralized", "style": "highlight"},
-			{"text": " financial sector,\nbacked by the Blockchain\nand SmartContracts,\nusing cryptocurrencies"}
+			{"text": " financial sector,\nthat uses the Blockchain\nand Smart Contracts,\nusing cryptocurrencies"}
 		],
 		"description": [
 			{"text": "The "},
 			{"text": "Decentralized Finance (DeFi)", "style": "highlight"},
-			{"text": " can be defined as an upgrade of the traditional financial systems in a more peer-to-peer way, with no middlemen. This includes loans, hedge fund, trading, insurance, etc."}
+			{"text": " can be defined as a financial system without central entity controlling it all. It's permissionless, anyone can use it; trustless, you don't need to trust in anyone, and fully transparent."}
 		]
 	},
 	{
@@ -71,9 +71,9 @@
 		"description": [
 			{"text": "A "},
 			{"text": "DAO", "style": "highlight"},
-			{"text": " is a new type of organisation not controlled by a single institution (government, central bank, board of directors), but by a group of people whishing to contribute to the opensource project."},
+			{"text": " is a new type of organisation not controlled by a single institution (government, central bank, board of directors), but by a group of people that have the same vision, and they contribute to the project."},
 			{"text": "", "style": "spacing"},
-			{"text": "It is not a company and thus, there is no or little regulation on the internal processes."}
+			{"text": "It is not a company and thus, there are no regulations in place yet."}
 		]
 	},
 	{
@@ -83,7 +83,7 @@
 			{"text": " a DeFi DAO"}
 		],
 		"description": [
-			{"text": "As I told you, there is no official (government) recognition and it's NOT a company like you used to know. It's more like a group of contributors receiving a reward for their contribution based on what you did and a common agreement rather than employees receiving a salary."},
+			{"text": "As I told you, it's NOT a company, and there are NO BOSSES. It's a group of people that distribute rewards based on their contribution to the project."},
 			{"text": "", "style": "spacing"},
 			{"text": "Therefore, you are not working in this DAO but "},
 			{"text": " with ", "style": "highlight"},
@@ -99,7 +99,7 @@
 		"description": [
 			{"text": "Rather than work, we use the term "},
 			{"text": " build", "style": "highlight"},
-			{"text": ". In an open-source ecosystem like Blockchain, you're looking to build connections between projects, new projects or new products. And that's often a passion. Do you even work when you love what you do?"}
+			{"text": ". In an open-source ecosystem like Ethereum, you're looking to build connections between projects, new projects or new products. And that's often a passion. Do you even work when you love what you do?"}
 		]
 	},
 	{

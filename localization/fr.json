@@ -11,8 +11,8 @@
 	},
 	{
 		"title": [
-			{"text": "Je travaille dans une entreprise du secteur financier,"},
-			{"text": " utilisant la Blockchain", "style": "highlight"}
+			{"text": "Je travaille dans une entreprise\ndu secteur financier,\n"},
+			{"text": "utilisant la Blockchain", "style": "highlight"}
 		],
 		"description": [
 			{"text": "La "},
@@ -22,8 +22,8 @@
 	},
 	{
 		"title": [
-			{"text": "Je travaille dans une entreprise du secteur financier, utilisant la Blockchain"},
-			{"text": " et des SmartContracts", "style": "highlight"}
+			{"text": "Je travaille dans une entreprise\ndu secteur financier,\nutilisant la Blockchain\n"},
+			{"text": " et des Smart Contracts", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Un "},
@@ -33,8 +33,8 @@
 	},
 	{
 		"title": [
-			{"text": "Je travaille dans une entreprise du secteur financier, utilisant la Blockchain, des SmartContracts"},
-			{"text": " et des cryptomonnaies", "style": "highlight"}
+			{"text": "Je travaille dans une entreprise\ndu secteur financier,\nutilisant la Blockchain,\ndes Smart Contracts\n"},
+			{"text": "et des cryptomonnaies", "style": "highlight"}
 		],
 		"description": [
 			{"text": "Une "},
@@ -44,14 +44,14 @@
 	},
 	{
 		"title": [
-			{"text": "Je travaille dans une entreprise du secteur financier"},
-			{"text": " décentralisé", "style": "highlight"},
-			{"text": ", utilisant la Blockchain, des SmartContracts et des cryptomonnaies"}
+			{"text": "Je travaille dans une entreprise\ndu secteur financier\n"},
+			{"text": "décentralisé\n", "style": "highlight"},
+			{"text": "utilisant la Blockchain,\ndes Smart Contracts\net des cryptomonnaies"}
 		],
 		"description": [
 			{"text": "La "},
 			{"text": "Finance Décentralisée (DeFi)", "style": "highlight"},
-			{"text": " peut être définie comme une modification du système financier traditionnel vers un système financier de pair à pair, sans intermédiaire. On y retrouve les systèmes de prêt et d'emprunts, des fonds d'investissement, des assurances ou encore des plateformes d'échanges."}
+			{"text": " peut être définie comme le système financier traditionnel sans contrôle de la part d'une entité centrale. C'est un système sans permission, tout le monde peut l'utiliser; sans besoin de faire confiance et complètement transparent."}
 		]
 	},
 	{
@@ -72,7 +72,7 @@
 		"description": [
 			{"text": "Une "},
 			{"text": "DAO", "style": "highlight"},
-			{"text": " est un nouveau type d'organisation non contrôlé par une unique institution (comme un gouvernement, une banque centrale ou un groupe de directeur), mais par un groupe de personnes souhaitant contribuer au projet Open-Source."},
+			{"text": " est un nouveau type d'organisation non contrôlé par une unique institution (comme un gouvernement, une banque centrale ou un groupe de directeur), mais par un groupe de personnes ayant la même vision et souhaitant contribuer au projet."},
 			{"text": "", "style": "spacing"},
 			{"text": "Il ne s'agit pas d'une entreprise, les régulations juridiques liées à ce type d'organisation sont limitées."}
 		]
@@ -84,7 +84,7 @@
 			{"text": " une DAO de la DeFi"}
 		],
 		"description": [
-			{"text": "Du fait de l'absence de statut officiel (d'un point de vue juridique et gouvernemental), une DAO n'est pas une entreprise telle que vous les connaissez. Il s'agit davantage d'un groupe de contributeurs qui reçoivent des récompenses pour leurs contributions, basé à la fois sur ce qu'ils ont fait ainsi que sur un accord commun. Il ne s'agit pas d'employés recevant un salaire pour ainsi dire."},
+			{"text": "Du fait de l'absence de statut officiel (d'un point de vue juridique et gouvernemental), une DAO n'est PAS une entreprise et il n'y a pas de hiérarchie. C'est un groupe de personnes recevant une récompense en fonction de leur contribution au projet."},
 			{"text": "", "style": "spacing"},
 			{"text": "Ainsi, on ne travaille pas dans une DAO, mais"},
 			{"text": " AVEC ", "style": "highlight"},
@@ -100,7 +100,7 @@
 		"description": [
 			{"text": "Plutôt que le terme travailler, nous préférons"},
 			{"text": " construire", "style": "highlight"},
-			{"text": ". Dans un écosystème open-source comme celui de la Blockchain, on cherche à construire des connexions entre les projets, à construire de nouveaux projets, produits et expérience. Souvent construire et s'investir dans cet univers est une question de passion et ... est-ce qu'on travaille vraiment lorsqu'on aime ce que l'on fait ?"}
+			{"text": ". Dans un écosystème open-source comme Ethereum, on cherche à construire des connexions entre les projets, à construire de nouveaux projets, produits et expérience. Souvent construire et s'investir dans cet univers est une question de passion et travaille-t'on vraiment lorsqu'on aime ce que l'on fait ?"}
 		]
 	},
 	{
