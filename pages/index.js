@@ -102,6 +102,7 @@ function	Index({router}) {
 		if (typeof(window) !== 'undefined') {
 			window.addEventListener('resize', () => setViewHeight());
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [typeof(window)]);
 
 	React.useEffect(() => {
