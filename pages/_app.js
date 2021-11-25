@@ -22,7 +22,6 @@ function	MyApp(props) {
 				<meta name={'googlebot'} content={'index,nofollow'} />
 				<meta charSet={'utf-8'} />
 			</Head>
-
 			<main aria-label={'app'} id={'app'}>
 				<Component
 					element={props.element}
