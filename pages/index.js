@@ -139,7 +139,7 @@ function	Index({router}) {
 							<div className={'text-white font-rubik font-bold text-base xs:text-2xl md:text-4xl text-center'}>
 								{section.title.map(({text, style}, index) => {
 									if (style === 'highlight') {
-										return <span key={`title${index}`}className={'text-highlight'}>{text}</span>;
+										return <span key={`title${index}`} className={'text-highlight'}>{text}</span>;
 									} else {
 										return text;
 									}
